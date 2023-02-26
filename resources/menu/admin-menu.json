@@ -1,0 +1,28 @@
+{
+  "menu": [
+    {
+      "url": "admin/",
+      "name": "Home",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "admin.dashboard"
+    },
+    {
+      "url": "admin/users",
+      "name": "Users",
+      "icon": "menu-icon tf-icons ti ti-users",
+      "slug": "admin.users.index"
+    },
+    {
+      "url": "admin/regions",
+      "name": "Regions",
+      "icon": "menu-icon tf-icons ti ti-world",
+      "slug": "admin.regions.index"
+    },
+    {
+      "url": "admin/categories",
+      "name": "Categories",
+      "icon": "menu-icon tf-icons ti ti-category",
+      "slug": "admin.categories.index"
+    }
+  ]
+}
