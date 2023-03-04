@@ -3,8 +3,8 @@
 return [
   "creatorName" => "Shiv",
   "creatorUrl" => "https://pixinvent.com",
-  "templateName" => "Appdid",
-  "templateSuffix" => "Appdid",
+  "templateName" => "Swaan",
+  "templateSuffix" => "Swaan",
   "templateVersion" => "1.0.0",
   "templateFree" => false,
   "templateDescription" => "Start your development with a Dashboard for Bootstrap 5",
