@@ -1,7 +1,7 @@
 <div class="form-group  has-feedback {{ $class }}">
     <label class="{{ $labelClass }}">{{ $label ?? ucwords(str_replace('_', ' ', $name)) }}</label>
     <div class="  @if ($icon) ls-inputicon-box @endif ">
-        <select class=" w-100 selectpicker" data-style="btn-default" @if ($multiple) multiple @endif data-live-search="{{ $search }}" title="" @if ($multiple) name="{{ $name }}[]" @else name="{{ $name }}" @endif id="{{ $id ?? $name }}" required="{{ $required }}" @if ($disabled) disabled @endif @if ($showTill) data-selected-text-format="count > {{ $showTill }}" @endif @if ($maxSelect) data-max-options="{{ $maxSelect }}" @endif @if (!empty($attrs)) @forelse ($attrs as $atr) {{ $atr[0] }}="{{ $atr[1] }}" @empty @endforelse @endif data-bv-field="size">
+        <select class=" w-100 selectpicker" data-style="btn-default" @if ($multiple) multiple @endif data-live-search="{{ $search }}" title="" @if ($multiple) name="{{ $name }}[]" @else name="{{ $name }}" @endif id="{{ $id ?? $name }}" @if ($required) required @endif @if ($disabled) disabled @endif @if ($showTill) data-selected-text-format="count > {{ $showTill }}" @endif @if ($maxSelect) data-max-options="{{ $maxSelect }}" @endif @if (!empty($attrs)) @forelse ($attrs as $atr) {{ $atr[0] }}="{{ $atr[1] }}" @empty @endforelse @endif data-bv-field="size">
 
             @if (!$multiple)
             <option disabled selected>Select {{ ucwords(str_replace('_', ' ', $name)) }}</option>
