@@ -37,6 +37,15 @@ class RegionTable extends DataTableComponent
       Column::make("name", "name")
         ->searchable()
         ->sortable(),
+      Column::make("Phone Code", "country_code")
+        ->searchable()
+        ->sortable(),
+      Column::make("Short", "short_code")
+        ->searchable()
+        ->sortable(),
+      Column::make("name", "name")
+        ->searchable()
+        ->sortable(),
       ComponentColumn::make("Image", "image")
         ->component("helper.table.avatar")
         ->attributes(fn ($value, $row, Column $column) => [

@@ -7,22 +7,40 @@
       "slug": "admin.dashboard"
     },
     {
+      "menuHeader": "User Management"
+    },
+    {
       "url": "admin/users",
       "name": "Users",
       "icon": "menu-icon tf-icons ti ti-users",
       "slug": "admin.users.index"
     },
     {
-      "url": "admin/regions",
-      "name": "Regions",
-      "icon": "menu-icon tf-icons ti ti-world",
-      "slug": "admin.regions.index"
+      "menuHeader": "Metadata Management"
     },
+
     {
-      "url": "admin/categories",
-      "name": "Categories",
-      "icon": "menu-icon tf-icons ti ti-category",
-      "slug": "admin.categories.index"
+      "name": "Metadata",
+      "icon": "menu-icon tf-icons ti ti-list",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "admin/regions",
+          "name": "Regions",
+          "slug": "admin.regions.index"
+        },
+        {
+          "url": "admin/categories",
+          "name": "Categories",
+          "slug": "admin.categories.index"
+        },
+        {
+          "url": "admin/sub-categories",
+          "name": "Sub Categories",
+          "slug": "admin.sub-categories.index"
+        }
+      ]
     }
+
   ]
 }

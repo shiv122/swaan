@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\Auth\AuthController;
 use App\Http\Controllers\Admin\Basic\DashboardController;
 use App\Http\Controllers\Admin\Metadata\CategoryController;
 use App\Http\Controllers\Admin\Metadata\RegionController;
+use App\Http\Controllers\Admin\SubCategoryController;
 use App\Http\Controllers\Admin\User\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,15 +29,26 @@ Route::middleware(['admin'])->group(function () {
   Route::controller(DashboardController::class)->group(function () {
     Route::get('/', 'index')->name('dashboard');
   });
+
+
   Route::controller(UserController::class)->prefix('users')->name('users.')->group(function () {
     Route::get('/', 'index')->name('index');
     Route::post('store', 'store')->name('store');
   });
+
+
+  Route::controller(RegionController::class)->prefix('regions')->name('regions.')->group(function () {
+    Route::get('/', 'index')->name('index');
+    Route::post('store', 'store')->name('store');
+  });
+
   Route::controller(CategoryController::class)->prefix('categories')->name('categories.')->group(function () {
     Route::get('/', 'index')->name('index');
     Route::post('store', 'store')->name('store');
   });
-  Route::controller(RegionController::class)->prefix('regions')->name('regions.')->group(function () {
+
+
+  Route::controller(SubCategoryController::class)->prefix('sub-categories')->name('sub-categories.')->group(function () {
     Route::get('/', 'index')->name('index');
     Route::post('store', 'store')->name('store');
   });

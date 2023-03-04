@@ -1,0 +1,141 @@
+name: 'Provider Auth'
+description: |-
+
+  APIs for provider authentication and registration
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: api/provider/login
+    metadata:
+      groupName: 'Provider Auth'
+      groupDescription: |-
+
+        APIs for provider authentication and registration
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: kaycee25@example.com
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: pariatur
+        type: string
+        custom: []
+      device_id:
+        name: device_id
+        description: ''
+        required: true
+        example: magnam
+        type: string
+        custom: []
+    cleanBodyParameters:
+      email: kaycee25@example.com
+      password: pariatur
+      device_id: magnam
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/provider/register
+    metadata:
+      groupName: 'Provider Auth'
+      groupDescription: |-
+
+        APIs for provider authentication and registration
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: kemmer.vernon@example.net
+        type: string
+        custom: []
+      phone:
+        name: phone
+        description: ''
+        required: true
+        example: officia
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: neque
+        type: string
+        custom: []
+      device_id:
+        name: device_id
+        description: ''
+        required: true
+        example: amet
+        type: string
+        custom: []
+      image:
+        name: image
+        description: 'Must be an image. Must not be greater than 1024 kilobytes.'
+        required: true
+        example: null
+        type: file
+        custom: []
+    cleanBodyParameters:
+      name: et
+      email: kemmer.vernon@example.net
+      phone: officia
+      password: neque
+      device_id: amet
+    fileParameters:
+      image: null
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

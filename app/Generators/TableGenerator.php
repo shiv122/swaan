@@ -99,14 +99,14 @@ class TableGenerator
 
   ];
       }
-    }
+
 
 
     public function changeStatus(string $id, bool $status)
     {
 
 
-      $user =  Region::findOrFail($id);
+      $user =  ' . $model . '::findOrFail($id);
       $user->status = $status;
       $user->save();
       $this->dispatchBrowserEvent(
@@ -120,7 +120,7 @@ class TableGenerator
     }
 
 
-
+  }
 
 
 
