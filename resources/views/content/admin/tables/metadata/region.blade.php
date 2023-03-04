@@ -13,10 +13,16 @@
     <form id="add-region-form">
         <div class="row">
             <div class="col-12">
-              <x-utils.form.input name="name" />
+                <x-utils.form.input name="name" />
             </div>
             <div class="col-12">
-              <x-utils.form.input name="image" type="file" :required="false" />
+                <x-utils.form.input name="phone_code" />
+            </div>
+            <div class="col-12">
+                <x-utils.form.input name="short_code" />
+            </div>
+            <div class="col-12">
+                <x-utils.form.input name="image" type="file" :required="false" />
             </div>
 
             <div class="col-12 mt-3 text-center">
@@ -31,20 +37,21 @@
 
 @section("page-script")
 <script>
- $('#add-region-form').submit(async function (e) {
-  e.preventDefault();
-  const response = await rebound({
-    route : "{{ route('admin.regions.store')}}",
-    form: $(this),
-  }).catch((error) => {
-    console.log(error);
-  });
+    $('#add-region-form').submit(async function(e) {
+        e.preventDefault();
+        const response = await rebound({
+            route: "{{ route('admin.regions.store')}}"
+            , form: $(this)
+        , }).catch((error) => {
+            console.log(error);
+        });
 
-  if (response) {
-    console.log(response);
-  }
+        if (response) {
+            console.log(response);
+        }
 
- });
+    });
+
 </script>
 
 @endsection

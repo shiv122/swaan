@@ -18,10 +18,14 @@ class RegionController extends Controller
   {
     $request->validate([
       'name' => 'required|string|max:255',
+      'phone_code' => 'required|string|max:255',
+      'short_code' => 'required|string|max:255',
       'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:512'
     ]);
     $region = Region::create([
       'name' => $request->name,
+      'country_code' => $request->phone_code,
+      'short_code' => $request->short_code,
       'image' => $request->image ? $fileManager->upload($request->image, 'images/regions') : null
     ]);
 
