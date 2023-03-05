@@ -16,6 +16,21 @@
       "slug": "admin.users.index"
     },
     {
+      "menuHeader": "Provider Management"
+    },
+    {
+      "name": "Providers",
+      "icon": "menu-icon tf-icons ti ti-hammer",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "admin/providers",
+          "name": "Providers",
+          "slug": "admin.providers.index"
+        }
+      ]
+    },
+    {
       "menuHeader": "Metadata Management"
     },
 

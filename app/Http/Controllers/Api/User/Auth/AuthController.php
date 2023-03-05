@@ -44,4 +44,33 @@ class AuthController extends Controller
       'status' => 'success',
     ]);
   }
+
+
+
+
+  public function register(Request $request)
+  {
+    $request->validate([
+      'name' => 'required',
+      'email' => 'required|email|unique:users',
+      'phone' => 'required|unique:users',
+      'password' => 'required',
+      'device_id' => 'required',
+    ]);
+
+    $user = User::create([
+      'name' => $request->name,
+      'email' => $request->email,
+      'phone' => $request->phone,
+      'password' => \Hash::make($request->password),
+      'device_id' => $request->device_id,
+    ]);
+
+    $token = $user->createToken('auth_token')->plainTextToken;
+
+    return response()->json([
+      'token' => $token,
+      'status' => 'success',
+    ]);
+  }
 }

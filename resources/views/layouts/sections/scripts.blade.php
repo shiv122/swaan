@@ -21,7 +21,7 @@
 
 
 <script type="module">
-  const init = import('/js/init.js');
+    const init = import('/js/init.js');
   const blockUI = init.then((module) => {
     return module.blockUI;
   });
@@ -44,10 +44,10 @@
 
 
 <script>
-  $(document).ready(function() {
+    $(document).ready(function() {
         window.addEventListener('lwToast', event => {
             toastr[event.detail.type](event.detail.message
-                , event.detail.title ?? '')
+                , event.detail.title ? ? '')
         });
         window.addEventListener('lwBlock', event => {
             blockUI(event.detail.selector);
@@ -62,3 +62,6 @@
     });
 
 </script>
+
+
+<script defer src="https://cdn.jsdelivr.net/gh/underground-works/clockwork-browser@1/dist/toolbar.js"></script>

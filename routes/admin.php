@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\Auth\AuthController;
 use App\Http\Controllers\Admin\Basic\DashboardController;
 use App\Http\Controllers\Admin\Metadata\CategoryController;
 use App\Http\Controllers\Admin\Metadata\RegionController;
+use App\Http\Controllers\Admin\ProviderController;
 use App\Http\Controllers\Admin\SubCategoryController;
 use App\Http\Controllers\Admin\User\UserController;
 use Illuminate\Support\Facades\Route;
@@ -49,6 +50,11 @@ Route::middleware(['admin'])->group(function () {
 
 
   Route::controller(SubCategoryController::class)->prefix('sub-categories')->name('sub-categories.')->group(function () {
+    Route::get('/', 'index')->name('index');
+    Route::post('store', 'store')->name('store');
+  });
+
+  Route::controller(ProviderController::class)->prefix('providers')->name('providers.')->group(function () {
     Route::get('/', 'index')->name('index');
     Route::post('store', 'store')->name('store');
   });
