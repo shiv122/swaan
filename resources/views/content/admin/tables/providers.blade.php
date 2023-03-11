@@ -55,6 +55,7 @@
                 },
                 method: 'GET',
                 processData: true,
+                notification: false,
             })
 
             if (response) {
