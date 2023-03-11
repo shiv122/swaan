@@ -32,27 +32,27 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: kaycee25@example.com
+        example: yhowe@example.net
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: pariatur
+        example: nostrum
         type: string
         custom: []
       device_id:
         name: device_id
         description: ''
         required: true
-        example: magnam
+        example: molestias
         type: string
         custom: []
     cleanBodyParameters:
-      email: kaycee25@example.com
-      password: pariatur
-      device_id: magnam
+      email: yhowe@example.net
+      password: nostrum
+      device_id: molestias
     fileParameters: []
     responses: []
     responseFields: []
@@ -88,35 +88,35 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: et
+        example: alias
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: kemmer.vernon@example.net
+        example: koepp.adonis@example.net
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: officia
+        example: qui
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: neque
+        example: ut
         type: string
         custom: []
       device_id:
         name: device_id
         description: ''
         required: true
-        example: amet
+        example: magni
         type: string
         custom: []
       image:
@@ -127,11 +127,11 @@ endpoints:
         type: file
         custom: []
     cleanBodyParameters:
-      name: et
-      email: kemmer.vernon@example.net
-      phone: officia
-      password: neque
-      device_id: amet
+      name: alias
+      email: koepp.adonis@example.net
+      phone: qui
+      password: ut
+      device_id: magni
     fileParameters:
       image: null
     responses: []

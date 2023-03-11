@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Laravel
+  title: swaan
   description: ''
   version: 1.0.0
 servers:
@@ -40,15 +40,15 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: kaycee25@example.com
+                  example: yhowe@example.net
                 password:
                   type: string
                   description: ''
-                  example: pariatur
+                  example: nostrum
                 device_id:
                   type: string
                   description: ''
-                  example: magnam
+                  example: molestias
               required:
                 - email
                 - password
@@ -87,23 +87,23 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: et
+                  example: alias
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: kemmer.vernon@example.net
+                  example: koepp.adonis@example.net
                 phone:
                   type: string
                   description: ''
-                  example: officia
+                  example: qui
                 password:
                   type: string
                   description: ''
-                  example: neque
+                  example: ut
                 device_id:
                   type: string
                   description: ''
-                  example: amet
+                  example: magni
                 image:
                   type: string
                   format: binary
@@ -218,27 +218,27 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: sequi
+                  example: perferendis
                 category_id:
                   type: integer
                   description: ''
-                  example: 2
+                  example: 20
                 sub_category_id:
                   type: integer
                   description: ''
-                  example: 4
+                  example: 20
                 description:
                   type: string
                   description: 'Must not be greater than 5000 characters.'
-                  example: 'Pariatur atque a reiciendis.'
+                  example: 'Quis voluptas aut velit dolorem dolores sed.'
                 latitude:
                   type: string
                   description: ''
-                  example: ad
+                  example: aliquid
                 longitude:
                   type: string
                   description: ''
-                  example: qui
+                  example: facilis
                 type:
                   type: string
                   description: 'Must be one of <code>fixed</code> or <code>hourly</code>.'
@@ -246,19 +246,19 @@ paths:
                 price:
                   type: number
                   description: ''
-                  example: 74.8
+                  example: 222634997.25621
                 discount:
                   type: number
                   description: ''
-                  example: 47283131.91578
+                  example: 115271.17916925
                 hours:
                   type: integer
                   description: 'This field is required when <code>minutes</code> is not present.'
-                  example: 10
+                  example: 16
                 minutes:
                   type: integer
                   description: 'This field is required when <code>hours</code> is not present.'
-                  example: 14
+                  example: 3
                 images:
                   type: array
                   description: 'Must be an image. Must not be greater than 1024 kilobytes.'
@@ -269,7 +269,7 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - natus
+                    - quibusdam
                   items:
                     type: integer
               required:
@@ -344,15 +344,15 @@ paths:
                 day:
                   type: string
                   description: ''
-                  example: dolorem
+                  example: eaque
                 start_time:
                   type: string
                   description: ''
-                  example: aliquam
+                  example: quos
                 end_time:
                   type: string
                   description: ''
-                  example: aliquam
+                  example: non
               required:
                 - day
                 - start_time
@@ -385,7 +385,7 @@ paths:
         in: path
         name: slot
         description: 'The slot.'
-        example: facere
+        example: quis
         required: true
         schema:
           type: string
@@ -422,17 +422,74 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: muller.jamar@example.org
+                  example: weimann.aletha@example.org
                 password:
                   type: string
                   description: ''
-                  example: nostrum
+                  example: id
                 device_id:
                   type: string
                   description: ''
-                  example: vitae
+                  example: sequi
               required:
                 - email
+                - password
+                - device_id
+      security: []
+  /api/user/register:
+    post:
+      summary: ''
+      operationId: postApiUserRegister
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - 'User Auth'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: vitae
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: elvis.sipes@example.org
+                phone:
+                  type: string
+                  description: ''
+                  example: necessitatibus
+                password:
+                  type: string
+                  description: ''
+                  example: omnis
+                device_id:
+                  type: string
+                  description: ''
+                  example: alias
+              required:
+                - name
+                - email
+                - phone
                 - password
                 - device_id
       security: []
@@ -440,6 +497,76 @@ paths:
     get:
       summary: ''
       operationId: getApiUser
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - 'User Basic'
+  /api/user/categories:
+    get:
+      summary: ''
+      operationId: getApiUserCategories
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - 'User Basic'
+  /api/user/services:
+    get:
+      summary: ''
+      operationId: getApiUserServices
       description: ''
       parameters:
         -
