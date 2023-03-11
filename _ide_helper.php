@@ -17942,6 +17942,56 @@
      
 }
 
+    namespace Kreait\Laravel\Firebase\Facades { 
+            /**
+     * 
+     *
+     * @method static \Kreait\Firebase\Contract\Auth auth()
+     * @method static \Kreait\Firebase\Contract\Database database()
+     * @method static \Kreait\Firebase\Contract\DynamicLinks dynamicLinks()
+     * @method static \Kreait\Firebase\Contract\Firestore firestore()
+     * @method static \Kreait\Firebase\Contract\Messaging messaging()
+     * @method static \Kreait\Firebase\Contract\RemoteConfig remoteConfig()
+     * @method static \Kreait\Firebase\Contract\Storage storage()
+     * @see \Kreait\Laravel\Firebase\FirebaseProjectManager
+     * @see \Kreait\Laravel\Firebase\FirebaseProject
+     */ 
+        class Firebase {
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function project($name = null)
+        {
+                        /** @var \Kreait\Laravel\Firebase\FirebaseProjectManager $instance */
+                        return $instance->project($name);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getDefaultProject()
+        {
+                        /** @var \Kreait\Laravel\Firebase\FirebaseProjectManager $instance */
+                        return $instance->getDefaultProject();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setDefaultProject($name)
+        {
+                        /** @var \Kreait\Laravel\Firebase\FirebaseProjectManager $instance */
+                        return $instance->setDefaultProject($name);
+        }
+         
+    }
+     
+}
+
     namespace Livewire { 
             /**
      * 
@@ -22717,6 +22767,7 @@ namespace  {
             class Vite extends \Illuminate\Support\Facades\Vite {}
             class Helper extends \App\Helpers\Helpers {}
             class Clockwork extends \Clockwork\Support\Laravel\Facade {}
+            class Firebase extends \Kreait\Laravel\Firebase\Facades\Firebase {}
             class Livewire extends \Livewire\Livewire {}
             class Flare extends \Spatie\LaravelIgnition\Facades\Flare {}
      
