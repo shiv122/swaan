@@ -56,6 +56,7 @@ Route::middleware(['admin'])->group(function () {
 
   Route::controller(ProviderController::class)->prefix('providers')->name('providers.')->group(function () {
     Route::get('/', 'index')->name('index');
+    Route::get('get-services', 'services')->name('services');
     Route::post('store', 'store')->name('store');
   });
 });

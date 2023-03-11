@@ -28,6 +28,16 @@ class Service extends Model
     return $this->hasMany(ServiceImage::class);
   }
 
+  public function category()
+  {
+    return $this->belongsTo(Category::class);
+  }
+
+  public function sub_category()
+  {
+    return $this->belongsTo(SubCategory::class);
+  }
+
 
   public function scopeActive()
   {

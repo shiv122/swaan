@@ -46,8 +46,7 @@
 <script>
     $(document).ready(function() {
         window.addEventListener('lwToast', event => {
-            toastr[event.detail.type](event.detail.message
-                , event.detail.title ? ? '')
+            toastr[event.detail.type](event.detail.message, event.detail.title ?? '')
         });
         window.addEventListener('lwBlock', event => {
             blockUI(event.detail.selector);
@@ -60,7 +59,6 @@
         });
 
     });
-
 </script>
 
 

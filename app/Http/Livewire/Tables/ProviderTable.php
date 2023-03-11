@@ -40,8 +40,16 @@ class ProviderTable extends DataTableComponent
         ->searchable()
         ->sortable(),
       Column::make("Service Count", "id")
+        ->format(function ($value, $row) {
+          return '<button data-getter-service="' . $row->id . '" class="btn badge bg-label-success">' . $row->services_count . '</button>';
+        })
+        ->html()
         ->sortable(fn ($query, $direction) => $query->withCount(['services'])->orderBy('services_count', $direction)),
       Column::make("address")
+        ->format(function ($value, $row) {
+          return $value ?? '<span class="badge bg-label-danger">Not Provided</span>';
+        })
+        ->html()
         ->searchable()
         ->sortable(),
       ComponentColumn::make("Image", "image")
