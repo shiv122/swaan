@@ -73,77 +73,77 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: perferendis
+        example: atque
         type: string
         custom: []
       category_id:
         name: category_id
         description: ''
         required: true
-        example: 20
+        example: 5
         type: integer
         custom: []
       sub_category_id:
         name: sub_category_id
         description: ''
         required: false
-        example: 20
+        example: 18
         type: integer
         custom: []
       description:
         name: description
         description: 'Must not be greater than 5000 characters.'
         required: false
-        example: 'Quis voluptas aut velit dolorem dolores sed.'
+        example: 'Impedit sequi maxime illum praesentium quisquam et.'
         type: string
         custom: []
       latitude:
         name: latitude
         description: ''
         required: false
-        example: aliquid
+        example: doloremque
         type: string
         custom: []
       longitude:
         name: longitude
         description: ''
         required: false
-        example: facilis
+        example: odio
         type: string
         custom: []
       type:
         name: type
         description: 'Must be one of <code>fixed</code> or <code>hourly</code>.'
         required: true
-        example: hourly
+        example: fixed
         type: string
         custom: []
       price:
         name: price
         description: ''
         required: true
-        example: 222634997.25621
+        example: 69009073.474145
         type: number
         custom: []
       discount:
         name: discount
         description: ''
         required: false
-        example: 115271.17916925
+        example: 5359.46
         type: number
         custom: []
       hours:
         name: hours
         description: 'This field is required when <code>minutes</code> is not present.'
         required: false
-        example: 16
+        example: 8
         type: integer
         custom: []
       minutes:
         name: minutes
         description: 'This field is required when <code>hours</code> is not present.'
         required: false
-        example: 3
+        example: 20
         type: integer
         custom: []
       images:
@@ -159,30 +159,30 @@ endpoints:
         description: ''
         required: false
         example:
-          - quibusdam
+          - quae
         type: 'integer[]'
         custom: []
       'slots[].id':
         name: 'slots[].id'
         description: ''
         required: false
-        example: 13
+        example: 7
         type: integer
         custom: []
     cleanBodyParameters:
-      name: perferendis
-      category_id: 20
-      sub_category_id: 20
-      description: 'Quis voluptas aut velit dolorem dolores sed.'
-      latitude: aliquid
-      longitude: facilis
-      type: hourly
-      price: 222634997.25621
-      discount: 115271.17916925
-      hours: 16
-      minutes: 3
+      name: atque
+      category_id: 5
+      sub_category_id: 18
+      description: 'Impedit sequi maxime illum praesentium quisquam et.'
+      latitude: doloremque
+      longitude: odio
+      type: fixed
+      price: 69009073.474145
+      discount: 5359.46
+      hours: 8
+      minutes: 20
       slots:
-        - quibusdam
+        - quae
     fileParameters:
       images:
         - null

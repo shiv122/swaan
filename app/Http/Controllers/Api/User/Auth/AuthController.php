@@ -19,6 +19,11 @@ use App\Services\Authentication\UserAuthenticationService;
 
 class AuthController extends Controller
 {
+
+  /**
+   * Login (Firebase based)
+   */
+
   public function login(Request $request, UserAuthenticationService $authenticationService)
   {
     $request->validate([
@@ -30,5 +35,69 @@ class AuthController extends Controller
 
 
     return $authenticationService->login($request);
+  }
+
+
+  /**
+   * Old Login (will be removed)
+   *
+   */
+
+  public function oldLogin(Request $request)
+  {
+    $request->validate([
+      'email' => 'required|email',
+      'password' => 'required',
+      'device_id' => 'required',
+    ]);
+
+    $user = User::where('email', $request->email)->firstOrFail();
+
+    if (!\Hash::check($request->password, $user->password)) {
+      return response()->json([
+        'message' => 'Invalid credentials'
+      ], 401);
+    }
+
+    $token = $user->createToken('auth_token')->plainTextToken;
+    $user->update([
+      'device_id' => $request->device_id,
+    ]);
+
+    return response()->json([
+      'token' => $token,
+      'status' => 'success',
+    ]);
+  }
+
+  /**
+   * Register (will be removed)
+   *
+   */
+
+  public function register(Request $request)
+  {
+    $request->validate([
+      'name' => 'required',
+      'email' => 'required|email|unique:users',
+      'phone' => 'required|unique:users',
+      'password' => 'required',
+      'device_id' => 'required',
+    ]);
+
+    $user = User::create([
+      'name' => $request->name,
+      'email' => $request->email,
+      'phone' => $request->phone,
+      'password' => \Hash::make($request->password),
+      'device_id' => $request->device_id,
+    ]);
+
+    $token = $user->createToken('auth_token')->plainTextToken;
+
+    return response()->json([
+      'token' => $token,
+      'status' => 'success',
+    ]);
   }
 }

@@ -30,27 +30,27 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: yhowe@example.net
+        example: toy.keaton@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: nostrum
+        example: quis
         type: string
         custom: []
       device_id:
         name: device_id
         description: ''
         required: true
-        example: molestias
+        example: sapiente
         type: string
         custom: []
     cleanBodyParameters:
-      email: yhowe@example.net
-      password: nostrum
-      device_id: molestias
+      email: toy.keaton@example.org
+      password: quis
+      device_id: sapiente
     fileParameters: []
     responses: []
     responseFields: []
@@ -86,35 +86,35 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: alias
+        example: repellat
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: koepp.adonis@example.net
+        example: bernita66@example.org
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: qui
+        example: quia
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: ut
+        example: sint
         type: string
         custom: []
       device_id:
         name: device_id
         description: ''
         required: true
-        example: magni
+        example: qui
         type: string
         custom: []
       image:
@@ -125,11 +125,11 @@ endpoints:
         type: file
         custom: []
     cleanBodyParameters:
-      name: alias
-      email: koepp.adonis@example.net
-      phone: qui
-      password: ut
-      device_id: magni
+      name: repellat
+      email: bernita66@example.org
+      phone: quia
+      password: sint
+      device_id: qui
     fileParameters:
       image: null
     responses: []

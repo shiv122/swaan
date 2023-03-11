@@ -16,7 +16,55 @@ endpoints:
         APIs for user authentication and registration
       subgroup: ''
       subgroupDescription: ''
-      title: ''
+      title: 'Login (Firebase based)'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      token:
+        name: token
+        description: ''
+        required: true
+        example: sit
+        type: string
+        custom: []
+      device_id:
+        name: device_id
+        description: 'Must be 36 characters.'
+        required: true
+        example: vrqzkyrfdcphmpojboqhmmojtorsnifqzczr
+        type: string
+        custom: []
+    cleanBodyParameters:
+      token: sit
+      device_id: vrqzkyrfdcphmpojboqhmmojtorsnifqzczr
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/user/old-login
+    metadata:
+      groupName: 'User Auth'
+      groupDescription: |-
+
+        APIs for user authentication and registration
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Old Login (will be removed)'
       description: ''
       authenticated: false
       custom: []
@@ -32,27 +80,27 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: weimann.aletha@example.org
+        example: collins.juanita@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: id
+        example: sint
         type: string
         custom: []
       device_id:
         name: device_id
         description: ''
         required: true
-        example: sequi
+        example: eos
         type: string
         custom: []
     cleanBodyParameters:
-      email: weimann.aletha@example.org
-      password: id
-      device_id: sequi
+      email: collins.juanita@example.com
+      password: sint
+      device_id: eos
     fileParameters: []
     responses: []
     responseFields: []
@@ -72,7 +120,7 @@ endpoints:
         APIs for user authentication and registration
       subgroup: ''
       subgroupDescription: ''
-      title: ''
+      title: 'Register (will be removed)'
       description: ''
       authenticated: false
       custom: []
@@ -88,43 +136,43 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: vitae
+        example: rem
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: elvis.sipes@example.org
+        example: davion16@example.org
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: necessitatibus
+        example: veritatis
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: omnis
+        example: sit
         type: string
         custom: []
       device_id:
         name: device_id
         description: ''
         required: true
-        example: alias
+        example: illum
         type: string
         custom: []
     cleanBodyParameters:
-      name: vitae
-      email: elvis.sipes@example.org
-      phone: necessitatibus
-      password: omnis
-      device_id: alias
+      name: rem
+      email: davion16@example.org
+      phone: veritatis
+      password: sit
+      device_id: illum
     fileParameters: []
     responses: []
     responseFields: []

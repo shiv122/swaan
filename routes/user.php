@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\User\Auth\AuthController;
 
 Route::controller(AuthController::class)->group(function () {
   Route::post('login', 'login');
+  Route::post('old-login', 'oldLogin');
   Route::post('register', 'register');
 });
 
