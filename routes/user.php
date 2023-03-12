@@ -11,12 +11,14 @@ Route::controller(AuthController::class)->group(function () {
   Route::post('register', 'register');
 });
 
+Route::controller(BasicController::class)->group(function () {
+  Route::get('categories', 'categories');
+  Route::get('services', 'services');
+});
 
 Route::controller(AuthController::class)->middleware(['auth:sanctum'])->group(function () {
 
   Route::controller(BasicController::class)->group(function () {
     Route::get('/', 'profile');
-    Route::get('categories', 'categories');
-    Route::get('services', 'services');
   });
 });
