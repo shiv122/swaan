@@ -52,6 +52,8 @@ namespace App\Models{
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\CategoryRegion> $regions
  * @property-read int|null $regions_count
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\SubCategory> $subcategories
+ * @property-read int|null $subcategories_count
  * @method static \Illuminate\Database\Eloquent\Builder|Category active()
  * @method static \Illuminate\Database\Eloquent\Builder|Category newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Category newQuery()
@@ -342,7 +344,7 @@ namespace App\Models{
  * @property int $id
  * @property string $name
  * @property string|null $image
- * @property string $email
+ * @property string|null $email
  * @property \Illuminate\Support\Carbon|null $email_verified_at
  * @property string|null $phone
  * @property string $password
