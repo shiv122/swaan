@@ -73,27 +73,27 @@ endpoints:
         name: day
         description: ''
         required: true
-        example: est
+        example: quia
         type: string
         custom: []
       start_time:
         name: start_time
         description: ''
         required: true
-        example: voluptatem
+        example: et
         type: string
         custom: []
       end_time:
         name: end_time
         description: ''
         required: true
-        example: dicta
+        example: sit
         type: string
         custom: []
     cleanBodyParameters:
-      day: est
-      start_time: voluptatem
-      end_time: dicta
+      day: quia
+      start_time: et
+      end_time: sit
     fileParameters: []
     responses: []
     responseFields: []
@@ -125,11 +125,11 @@ endpoints:
         name: slot
         description: 'The slot.'
         required: true
-        example: consectetur
+        example: possimus
         type: string
         custom: []
     cleanUrlParameters:
-      slot: consectetur
+      slot: possimus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

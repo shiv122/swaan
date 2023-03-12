@@ -71,6 +71,7 @@ class UserAuthenticationService
     return response([
       'type' => $type,
       'token' => $user->createToken('user')->plainTextToken,
+      'user' => $user,
     ]);
   }
 
@@ -108,6 +109,7 @@ class UserAuthenticationService
       return response([
         'type' => AuthenticationTypeEnum::OLD->value,
         'token' => $user->createToken('user')->plainTextToken,
+        'user' => $user,
       ]);
     }
     return response([

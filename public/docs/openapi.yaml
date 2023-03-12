@@ -40,15 +40,15 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: toy.keaton@example.org
+                  example: schimmel.elmira@example.org
                 password:
                   type: string
                   description: ''
-                  example: quis
+                  example: voluptas
                 device_id:
                   type: string
                   description: ''
-                  example: sapiente
+                  example: suscipit
               required:
                 - email
                 - password
@@ -87,23 +87,23 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: repellat
+                  example: autem
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: bernita66@example.org
+                  example: chloe.eichmann@example.net
                 phone:
                   type: string
                   description: ''
-                  example: quia
+                  example: accusamus
                 password:
                   type: string
                   description: ''
-                  example: sint
+                  example: velit
                 device_id:
                   type: string
                   description: ''
-                  example: qui
+                  example: eveniet
                 image:
                   type: string
                   format: binary
@@ -218,27 +218,27 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: atque
+                  example: accusamus
                 category_id:
                   type: integer
                   description: ''
-                  example: 5
+                  example: 14
                 sub_category_id:
                   type: integer
                   description: ''
-                  example: 18
+                  example: 16
                 description:
                   type: string
                   description: 'Must not be greater than 5000 characters.'
-                  example: 'Impedit sequi maxime illum praesentium quisquam et.'
+                  example: 'Perferendis libero itaque deleniti consequatur explicabo minus molestiae.'
                 latitude:
                   type: string
                   description: ''
-                  example: doloremque
+                  example: id
                 longitude:
                   type: string
                   description: ''
-                  example: odio
+                  example: molestiae
                 type:
                   type: string
                   description: 'Must be one of <code>fixed</code> or <code>hourly</code>.'
@@ -246,19 +246,19 @@ paths:
                 price:
                   type: number
                   description: ''
-                  example: 69009073.474145
+                  example: 316.0013789
                 discount:
                   type: number
                   description: ''
-                  example: 5359.46
+                  example: 5357.0
                 hours:
                   type: integer
                   description: 'This field is required when <code>minutes</code> is not present.'
-                  example: 8
+                  example: 6
                 minutes:
                   type: integer
                   description: 'This field is required when <code>hours</code> is not present.'
-                  example: 20
+                  example: 12
                 images:
                   type: array
                   description: 'Must be an image. Must not be greater than 1024 kilobytes.'
@@ -269,7 +269,7 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - quae
+                    - possimus
                   items:
                     type: integer
               required:
@@ -344,15 +344,15 @@ paths:
                 day:
                   type: string
                   description: ''
-                  example: est
+                  example: quia
                 start_time:
                   type: string
                   description: ''
-                  example: voluptatem
+                  example: et
                 end_time:
                   type: string
                   description: ''
-                  example: dicta
+                  example: sit
               required:
                 - day
                 - start_time
@@ -385,7 +385,7 @@ paths:
         in: path
         name: slot
         description: 'The slot.'
-        example: consectetur
+        example: possimus
         required: true
         schema:
           type: string
@@ -422,11 +422,11 @@ paths:
                 token:
                   type: string
                   description: ''
-                  example: sit
+                  example: quos
                 device_id:
                   type: string
                   description: 'Must be 36 characters.'
-                  example: vrqzkyrfdcphmpojboqhmmojtorsnifqzczr
+                  example: nlvdlxpchuacdrwnjrzycmagtzxqvrlnwljz
               required:
                 - token
                 - device_id
@@ -464,15 +464,15 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: collins.juanita@example.com
+                  example: nora60@example.org
                 password:
                   type: string
                   description: ''
-                  example: sint
+                  example: sequi
                 device_id:
                   type: string
                   description: ''
-                  example: eos
+                  example: suscipit
               required:
                 - email
                 - password
@@ -511,23 +511,23 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: rem
+                  example: reprehenderit
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: davion16@example.org
+                  example: svon@example.org
                 phone:
                   type: string
                   description: ''
-                  example: veritatis
+                  example: nostrum
                 password:
                   type: string
                   description: ''
-                  example: sit
+                  example: accusamus
                 device_id:
                   type: string
                   description: ''
-                  example: illum
+                  example: voluptatum
               required:
                 - name
                 - email

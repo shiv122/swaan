@@ -32,19 +32,19 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: sit
+        example: quos
         type: string
         custom: []
       device_id:
         name: device_id
         description: 'Must be 36 characters.'
         required: true
-        example: vrqzkyrfdcphmpojboqhmmojtorsnifqzczr
+        example: nlvdlxpchuacdrwnjrzycmagtzxqvrlnwljz
         type: string
         custom: []
     cleanBodyParameters:
-      token: sit
-      device_id: vrqzkyrfdcphmpojboqhmmojtorsnifqzczr
+      token: quos
+      device_id: nlvdlxpchuacdrwnjrzycmagtzxqvrlnwljz
     fileParameters: []
     responses: []
     responseFields: []
@@ -80,27 +80,27 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: collins.juanita@example.com
+        example: nora60@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: sint
+        example: sequi
         type: string
         custom: []
       device_id:
         name: device_id
         description: ''
         required: true
-        example: eos
+        example: suscipit
         type: string
         custom: []
     cleanBodyParameters:
-      email: collins.juanita@example.com
-      password: sint
-      device_id: eos
+      email: nora60@example.org
+      password: sequi
+      device_id: suscipit
     fileParameters: []
     responses: []
     responseFields: []
@@ -136,43 +136,43 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: rem
+        example: reprehenderit
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: davion16@example.org
+        example: svon@example.org
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: veritatis
+        example: nostrum
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: sit
+        example: accusamus
         type: string
         custom: []
       device_id:
         name: device_id
         description: ''
         required: true
-        example: illum
+        example: voluptatum
         type: string
         custom: []
     cleanBodyParameters:
-      name: rem
-      email: davion16@example.org
-      phone: veritatis
-      password: sit
-      device_id: illum
+      name: reprehenderit
+      email: svon@example.org
+      phone: nostrum
+      password: accusamus
+      device_id: voluptatum
     fileParameters: []
     responses: []
     responseFields: []
