@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "swaan",
-        "_postman_id": "e9740a04-928f-4a99-9fb6-1888c8cc5c74",
+        "_postman_id": "f357bfc1-32d4-4632-835c-541c71638d77",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"schimmel.elmira@example.org\",\"password\":\"voluptas\",\"device_id\":\"suscipit\"}"
+                            "raw": "{\"email\":\"gleichner.norval@example.org\",\"password\":\"consequatur\",\"device_id\":\"reprehenderit\"}"
                         },
                         "description": "",
                         "auth": {
@@ -75,31 +75,31 @@
                             "formdata": [
                                 {
                                     "key": "name",
-                                    "value": "autem",
+                                    "value": "commodi",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "email",
-                                    "value": "chloe.eichmann@example.net",
+                                    "value": "roel.bauch@example.org",
                                     "type": "text",
                                     "description": "Must be a valid email address."
                                 },
                                 {
                                     "key": "phone",
-                                    "value": "accusamus",
+                                    "value": "voluptas",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "password",
-                                    "value": "velit",
+                                    "value": "illum",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "device_id",
-                                    "value": "eveniet",
+                                    "value": "placeat",
                                     "type": "text",
                                     "description": ""
                                 },
@@ -131,6 +131,51 @@
                             "path": "api\/provider",
                             "query": [],
                             "raw": "{{baseUrl}}\/api\/provider"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/provider\/categories",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/provider\/categories",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/provider\/categories"
                         },
                         "method": "GET",
                         "header": [
@@ -244,37 +289,37 @@
                             "formdata": [
                                 {
                                     "key": "name",
-                                    "value": "accusamus",
+                                    "value": "eos",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "category_id",
-                                    "value": 14,
+                                    "value": 19,
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "sub_category_id",
-                                    "value": 16,
+                                    "value": 13,
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "description",
-                                    "value": "Perferendis libero itaque deleniti consequatur explicabo minus molestiae.",
+                                    "value": "Autem aliquam error eos qui excepturi.",
                                     "type": "text",
                                     "description": "Must not be greater than 5000 characters."
                                 },
                                 {
                                     "key": "latitude",
-                                    "value": "id",
+                                    "value": "et",
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "longitude",
-                                    "value": "molestiae",
+                                    "value": "perferendis",
                                     "type": "text",
                                     "description": ""
                                 },
@@ -286,31 +331,31 @@
                                 },
                                 {
                                     "key": "price",
-                                    "value": 316.0013789,
+                                    "value": 1.2,
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "discount",
-                                    "value": 5357,
+                                    "value": 16962216.953,
                                     "type": "text",
                                     "description": ""
                                 },
                                 {
                                     "key": "hours",
-                                    "value": 6,
+                                    "value": 14,
                                     "type": "text",
                                     "description": "This field is required when <code>minutes<\/code> is not present."
                                 },
                                 {
                                     "key": "minutes",
-                                    "value": 12,
+                                    "value": 16,
                                     "type": "text",
                                     "description": "This field is required when <code>hours<\/code> is not present."
                                 },
                                 {
                                     "key": "slots[0]",
-                                    "value": "possimus",
+                                    "value": "maiores",
                                     "type": "text",
                                     "description": ""
                                 },
@@ -398,7 +443,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"day\":\"quia\",\"start_time\":\"et\",\"end_time\":\"sit\"}"
+                            "raw": "{\"day\":\"aliquid\",\"start_time\":\"quia\",\"end_time\":\"saepe\"}"
                         },
                         "description": ""
                     },
@@ -416,7 +461,7 @@
                                 {
                                     "id": "slot",
                                     "key": "slot",
-                                    "value": "possimus",
+                                    "value": "perspiciatis",
                                     "description": "The slot."
                                 }
                             ]
@@ -465,7 +510,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"quos\",\"device_id\":\"nlvdlxpchuacdrwnjrzycmagtzxqvrlnwljz\"}"
+                            "raw": "{\"token\":\"est\",\"device_id\":\"jourlgfpvsnzekswtbynysecxkhjnfncsmqf\"}"
                         },
                         "description": "",
                         "auth": {
@@ -496,7 +541,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"nora60@example.org\",\"password\":\"sequi\",\"device_id\":\"suscipit\"}"
+                            "raw": "{\"email\":\"allan89@example.org\",\"password\":\"voluptas\",\"device_id\":\"aperiam\"}"
                         },
                         "description": "",
                         "auth": {
@@ -527,7 +572,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"reprehenderit\",\"email\":\"svon@example.org\",\"phone\":\"nostrum\",\"password\":\"accusamus\",\"device_id\":\"voluptatum\"}"
+                            "raw": "{\"name\":\"ducimus\",\"email\":\"mikel06@example.org\",\"phone\":\"commodi\",\"password\":\"et\",\"device_id\":\"blanditiis\"}"
                         },
                         "description": "",
                         "auth": {

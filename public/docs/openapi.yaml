@@ -40,15 +40,15 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: schimmel.elmira@example.org
+                  example: gleichner.norval@example.org
                 password:
                   type: string
                   description: ''
-                  example: voluptas
+                  example: consequatur
                 device_id:
                   type: string
                   description: ''
-                  example: suscipit
+                  example: reprehenderit
               required:
                 - email
                 - password
@@ -87,23 +87,23 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: autem
+                  example: commodi
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: chloe.eichmann@example.net
+                  example: roel.bauch@example.org
                 phone:
                   type: string
                   description: ''
-                  example: accusamus
+                  example: voluptas
                 password:
                   type: string
                   description: ''
-                  example: velit
+                  example: illum
                 device_id:
                   type: string
                   description: ''
-                  example: eveniet
+                  example: placeat
                 image:
                   type: string
                   format: binary
@@ -120,6 +120,41 @@ paths:
     get:
       summary: ''
       operationId: getApiProvider
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - 'Provider Basic'
+  /api/provider/categories:
+    get:
+      summary: ''
+      operationId: getApiProviderCategories
       description: ''
       parameters:
         -
@@ -218,27 +253,27 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: accusamus
+                  example: eos
                 category_id:
                   type: integer
                   description: ''
-                  example: 14
+                  example: 19
                 sub_category_id:
                   type: integer
                   description: ''
-                  example: 16
+                  example: 13
                 description:
                   type: string
                   description: 'Must not be greater than 5000 characters.'
-                  example: 'Perferendis libero itaque deleniti consequatur explicabo minus molestiae.'
+                  example: 'Autem aliquam error eos qui excepturi.'
                 latitude:
                   type: string
                   description: ''
-                  example: id
+                  example: et
                 longitude:
                   type: string
                   description: ''
-                  example: molestiae
+                  example: perferendis
                 type:
                   type: string
                   description: 'Must be one of <code>fixed</code> or <code>hourly</code>.'
@@ -246,19 +281,19 @@ paths:
                 price:
                   type: number
                   description: ''
-                  example: 316.0013789
+                  example: 1.2
                 discount:
                   type: number
                   description: ''
-                  example: 5357.0
+                  example: 16962216.953
                 hours:
                   type: integer
                   description: 'This field is required when <code>minutes</code> is not present.'
-                  example: 6
+                  example: 14
                 minutes:
                   type: integer
                   description: 'This field is required when <code>hours</code> is not present.'
-                  example: 12
+                  example: 16
                 images:
                   type: array
                   description: 'Must be an image. Must not be greater than 1024 kilobytes.'
@@ -269,7 +304,7 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - possimus
+                    - maiores
                   items:
                     type: integer
               required:
@@ -344,15 +379,15 @@ paths:
                 day:
                   type: string
                   description: ''
-                  example: quia
+                  example: aliquid
                 start_time:
                   type: string
                   description: ''
-                  example: et
+                  example: quia
                 end_time:
                   type: string
                   description: ''
-                  example: sit
+                  example: saepe
               required:
                 - day
                 - start_time
@@ -385,7 +420,7 @@ paths:
         in: path
         name: slot
         description: 'The slot.'
-        example: possimus
+        example: perspiciatis
         required: true
         schema:
           type: string
@@ -422,11 +457,11 @@ paths:
                 token:
                   type: string
                   description: ''
-                  example: quos
+                  example: est
                 device_id:
                   type: string
                   description: 'Must be 36 characters.'
-                  example: nlvdlxpchuacdrwnjrzycmagtzxqvrlnwljz
+                  example: jourlgfpvsnzekswtbynysecxkhjnfncsmqf
               required:
                 - token
                 - device_id
@@ -464,15 +499,15 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: nora60@example.org
+                  example: allan89@example.org
                 password:
                   type: string
                   description: ''
-                  example: sequi
+                  example: voluptas
                 device_id:
                   type: string
                   description: ''
-                  example: suscipit
+                  example: aperiam
               required:
                 - email
                 - password
@@ -511,23 +546,23 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: reprehenderit
+                  example: ducimus
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: svon@example.org
+                  example: mikel06@example.org
                 phone:
                   type: string
                   description: ''
-                  example: nostrum
+                  example: commodi
                 password:
                   type: string
                   description: ''
-                  example: accusamus
+                  example: et
                 device_id:
                   type: string
                   description: ''
-                  example: voluptatum
+                  example: blanditiis
               required:
                 - name
                 - email

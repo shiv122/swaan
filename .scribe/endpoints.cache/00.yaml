@@ -32,19 +32,19 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: quos
+        example: est
         type: string
         custom: []
       device_id:
         name: device_id
         description: 'Must be 36 characters.'
         required: true
-        example: nlvdlxpchuacdrwnjrzycmagtzxqvrlnwljz
+        example: jourlgfpvsnzekswtbynysecxkhjnfncsmqf
         type: string
         custom: []
     cleanBodyParameters:
-      token: quos
-      device_id: nlvdlxpchuacdrwnjrzycmagtzxqvrlnwljz
+      token: est
+      device_id: jourlgfpvsnzekswtbynysecxkhjnfncsmqf
     fileParameters: []
     responses: []
     responseFields: []
@@ -80,27 +80,27 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: nora60@example.org
+        example: allan89@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: sequi
+        example: voluptas
         type: string
         custom: []
       device_id:
         name: device_id
         description: ''
         required: true
-        example: suscipit
+        example: aperiam
         type: string
         custom: []
     cleanBodyParameters:
-      email: nora60@example.org
-      password: sequi
-      device_id: suscipit
+      email: allan89@example.org
+      password: voluptas
+      device_id: aperiam
     fileParameters: []
     responses: []
     responseFields: []
@@ -136,43 +136,43 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: reprehenderit
+        example: ducimus
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: svon@example.org
+        example: mikel06@example.org
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: nostrum
+        example: commodi
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: accusamus
+        example: et
         type: string
         custom: []
       device_id:
         name: device_id
         description: ''
         required: true
-        example: voluptatum
+        example: blanditiis
         type: string
         custom: []
     cleanBodyParameters:
-      name: reprehenderit
-      email: svon@example.org
-      phone: nostrum
-      password: accusamus
-      device_id: voluptatum
+      name: ducimus
+      email: mikel06@example.org
+      phone: commodi
+      password: et
+      device_id: blanditiis
     fileParameters: []
     responses: []
     responseFields: []

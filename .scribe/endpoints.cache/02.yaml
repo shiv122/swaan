@@ -32,27 +32,27 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: schimmel.elmira@example.org
+        example: gleichner.norval@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: voluptas
+        example: consequatur
         type: string
         custom: []
       device_id:
         name: device_id
         description: ''
         required: true
-        example: suscipit
+        example: reprehenderit
         type: string
         custom: []
     cleanBodyParameters:
-      email: schimmel.elmira@example.org
-      password: voluptas
-      device_id: suscipit
+      email: gleichner.norval@example.org
+      password: consequatur
+      device_id: reprehenderit
     fileParameters: []
     responses: []
     responseFields: []
@@ -88,35 +88,35 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: autem
+        example: commodi
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: chloe.eichmann@example.net
+        example: roel.bauch@example.org
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: accusamus
+        example: voluptas
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: velit
+        example: illum
         type: string
         custom: []
       device_id:
         name: device_id
         description: ''
         required: true
-        example: eveniet
+        example: placeat
         type: string
         custom: []
       image:
@@ -127,11 +127,11 @@ endpoints:
         type: file
         custom: []
     cleanBodyParameters:
-      name: autem
-      email: chloe.eichmann@example.net
-      phone: accusamus
-      password: velit
-      device_id: eveniet
+      name: commodi
+      email: roel.bauch@example.org
+      phone: voluptas
+      password: illum
+      device_id: placeat
     fileParameters:
       image: null
     responses: []
