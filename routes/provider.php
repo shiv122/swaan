@@ -18,6 +18,8 @@ Route::controller(BasicController::class)
   ->middleware(['auth:provider'])
   ->group(function () {
     Route::get('/', 'profile');
+    Route::get('categories', 'categories');
+    // Route::get('/categories/{id}', 'subcategories');
   });
 
 Route::middleware(['auth:provider', 'active'])->group(function () {

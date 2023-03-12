@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\Provider;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 
@@ -22,6 +23,17 @@ class BasicController extends Controller
     return response()->json([
       'status' => 'success',
       'provider' => $request->user(),
+    ], 200);
+  }
+
+
+  public function categories()
+  {
+    $categories = Category::active()->with('subcategories')->get();
+
+    return response()->json([
+      'status' => 'success',
+      'categories' => $categories,
     ], 200);
   }
 }
